@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.taskbar{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(207, 217, 221);
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.task-detail{
+    position: absolute;
+    right: 0;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons div{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons img{
+    width: 30px;
+    height: 30px;
+    margin: 0 6px;
+}
+
+.icons div:hover{
+    background-color: rgb(254, 254, 255);
+}
+
+.store{
+    position: absolute;
+    bottom: -100%;
+    left: 20%;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.menu{
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    bottom: -100%;
+    left: 40%;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.meet{
+    position: absolute;
+    width: 20%;
+    height: 40vh;
+    bottom: -100%;
+    left: 40%;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.active{
+    bottom: 100px;
+}
